@@ -10,19 +10,20 @@ export default function HomePage() {
 
   function handleClick() {
     setLikes(likes + 1);
-    console.log("TEST SENDING every click to CONSOLE ! ")
+    console.log("TEST SENDING CONSOLE LOG\n")
   }
 
   return (
     <div>
-      <Header title="🚀 code to the 🌝" />
+      <Header title="🚀 Code To The 🌝" />
+      <Header title="Ship Code To The Moon!" />
       <ul>
         {names.map((name) => (
           <li key={name}>{name}</li>
         ))}
       </ul>
 
-      <button onClick={handleClick}>Yes, I do like\n... ({likes})</button>
+      <button onClick={handleClick}> Like! ({likes})</button>
     </div>
   );
 }
