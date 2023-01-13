@@ -12,10 +12,10 @@ jobs:
 
     steps:
       - name: Checkout Git Repo
-      - uses: actions/checkout@v3
+        uses: actions/checkout@v3
       
       - name: Pre-commit actions
-      - uses: pre-commit/action@v3.0.0
+        uses: pre-commit/action@v3.0.0
 
       - name: Build the Docker image
         run: docker build . --file Dockerfile --tag frontend:$(date +%s)
