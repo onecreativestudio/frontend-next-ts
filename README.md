@@ -71,4 +71,4 @@ Note: See [pruning](https://docs.docker.com/config/pruning/) for details on how 
 
 \
 &nbsp;
-&copy; 2023 OneCreativeStudio, LLC.
+&copy; 2022 - 2023 OneCreativeStudio, LLC.

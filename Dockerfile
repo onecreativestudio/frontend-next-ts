@@ -8,7 +8,7 @@ WORKDIR /frontend
 COPY package*.json ./
 
 # INFO: ABOUT TO RUN YARN INSTALL.
-RUN yarn install
+RUN yarn install --frozen-lockfile
 
 # INFO: COPYING APP FILES.
 COPY . .
@@ -18,7 +18,9 @@ EXPOSE 3000
 
 # INFO: STARTING DEV ENVIRONMENT.
 CMD ["yarn", "dev"]
-# CMD ["yarn", "dev"]
+
+# ENV YARN_CACHE_FOLDER=/dev/shm/yarn_cache
+# RUN yarn install --production
 
 # CMD npm run dev
 #Prod will look like: ` CMD ["npm", "start"]`
