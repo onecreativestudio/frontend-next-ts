@@ -22,4 +22,4 @@ i.e.: `docker run -it --rm -p 3000:3000 frontend:v0.1`
 
 Execute command within container: `docker exec -t -i mycontainer /bin/sh`
 
-Note: See (pruning)[https://docs.docker.com/config/pruning/] for details on how to clean local environment.
+Note: See [pruning](https://docs.docker.com/config/pruning/) for details on how to clean local environment.
