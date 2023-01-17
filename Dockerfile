@@ -8,7 +8,9 @@ WORKDIR /frontend
 COPY package*.json ./
 
 # INFO: ABOUT TO RUN YARN INSTALL.
-RUN yarn install --frozen-lockfile
+# RUN yarn install --frozen-lockfile
+RUN rm -rf node_modules && yarn install --frozen-lockfile
+
 
 # INFO: COPYING APP FILES.
 COPY . .
