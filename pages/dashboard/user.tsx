@@ -9,28 +9,8 @@ function Footer({ footer_text: text }) {
   return <h4>{text ? text : "Default footer"}</h4>;
 }
 
-export default function HomePage() {
+export default function UserDashboard() {
   const scientists = [
-    {
-      name: "Ada Lovelace",
-      role: "creating the first computer program.",
-    },
-    {
-      name: "Grace Hopper",
-      role: "inventing computing methods and devices, like the compiler.",
-    },
-    {
-      name: "Margaret Hamilton",
-      role: "developing programs that influence how today's computers work.",
-    },
-    {
-      name: "Katherine Johnson",
-      role: "being crucial in putting the first American into space.",
-    },
-    {
-      name: "Adele Goldberg",
-      role: "being part of the team that introduced overlapping windows on display screens at Xerox PARC.",
-    },
     {
       name: "Mega Smith",
       role: "being first woman to serve as the U.S. chief technology officer.",
@@ -50,9 +30,9 @@ export default function HomePage() {
   return (
     <>
       <div>
-        <Header title="🚀 Code To The 🌝 !" />
+        <Header title="USER DASHBOARD" />
         <div>
-          <Link href="/login">Login</Link>
+          <Link href="/">home</Link>
         </div>
 
         <ul>
