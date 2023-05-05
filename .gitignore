@@ -1,4 +1,16 @@
+# dependencies
 node_modules/
+
+# Environment
+.env
+
+# IDE
+/.idea
+/.awcache
+/.vscode
+/.devcontainer
+*.code-workspace
+
 bower_components/
 coverage/
 .sass-cache/
@@ -6,6 +18,17 @@ coverage/
 .tmp/
 dist/
 .vscode/
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# bundle
+packages/**/*.d.ts
+packages/**/*.js
 
 
 # Optional REPL history
@@ -21,3 +44,19 @@ npm-debug.log*
 pids
 *.pid
 *.seed
+
+# MacOS
+*.DS_Store*
+
+# misc
+.DS_Store
+lerna-debug.log
+npm-debug.log
+yarn-error.log
+/**/npm-debug.log
+/packages/**/.npmignore
+/packages/**/LICENSE
+*.tsbuildinfo
+
+.npmrc
+pnpm-lock.yaml
