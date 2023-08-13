@@ -1,4 +1,5 @@
-# 2023 ReactJS Frontend
+# 2023 React + Next Frontend
+
 
 ## System Requirements
 
@@ -33,6 +34,9 @@ To debug, try `docker-compose up` or `docker-compose up -d --build`
 - Execute command within container: `docker exec -t -i mycontainer /bin/sh`
 
 - See [pruning](https://docs.docker.com/config/pruning/) for details on how to clean local environment.
+
+#### Repository maintenance: 
+You may run `yarn upgrade-interactive --latest` to update dependencies. Ensure branch is up-to-date and tested locally or via pipepine before merging. 
 
 \
 &nbsp;
