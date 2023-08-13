@@ -9,7 +9,7 @@
 
 ---
 
-## Docker Compose Execution Intructions
+## Docker Compose Execution Instructions
 
 ### Recommended: `docker-compose -f ./docker-compose.yml up -d --build` from project's directory.
 
